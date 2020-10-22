@@ -42,5 +42,26 @@ namespace GradeBook.GradeBooks
             }
             return 'F';
         }
+        public override void CalculateStatistics()
+        {
+            if (Students.Count() < 5)
+            {
+                Console.WriteLine("Minimum to 5 studentow");
+                return;
+            }
+
+            base.CalculateStatistics();
+        }
+
+        public override void CalculateStudentStatistics(string name)
+        {
+            if (Students.Count() < 5)
+            {
+                Console.WriteLine("Minimum to 5 studentow");
+                return;
+            }
+
+            base.CalculateStudentStatistics(name);
+        }
     }
 }
