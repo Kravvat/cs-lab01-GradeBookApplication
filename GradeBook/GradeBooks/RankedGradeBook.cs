@@ -16,7 +16,7 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count < 5)
             {
-                throw new InvalidOperationException("Minimum to 5 studentow");
+                throw new InvalidOperationException("You must have at least 5 students to do ranked grading.");
             }
 
             var threshold = (int)Math.Ceiling(Students.Count * 0.2);
@@ -46,7 +46,7 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count() < 5)
             {
-                Console.WriteLine("Minimum to 5 studentow");
+                Console.WriteLine("Ranked grading requires at least 5 students.");
                 return;
             }
 
@@ -57,7 +57,7 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count() < 5)
             {
-                Console.WriteLine("Minimum to 5 studentow");
+                Console.WriteLine("Ranked grading requires at least 5 students.");
                 return;
             }
 
